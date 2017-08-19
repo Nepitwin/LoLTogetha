@@ -7,8 +7,10 @@ function random() {
   declare -i Random_Number=$1
 
   if [ ! $Random_Number -gt 0 ]; then
-    # default to 6
-    Random_Number=6
+    # default to 4
+    # chosen by fair dice roll.
+    # guaranteed to be random.
+    Random_Number=4
   fi
 
   value=$[($RANDOM % $Random_Number)]
