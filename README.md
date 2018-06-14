@@ -1,6 +1,6 @@
 # LoLTogetha
 
-This simple shell scripts run a lot of easter eggs from a Ubuntu shell.
+This shell script runs randomly a lot of easter eggs from a Ubuntu shell.
 
 ## Dependencies
 
