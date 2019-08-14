@@ -19,11 +19,11 @@ function random() {
 
 # Array with expressions
 cow=("apt" "bud-frogs" "bunny" "calvin" "cheese" "cock" "cower" "daemon" "default" "dragon" "dragon-and-cow" "duck" "elephant" "elephant-in-snake" "eyes" "flaming-sheep" "ghostbusters" "gnu" "hellokitty" "kiss" "koala" "kosh" "luke-koala" "mech-and-cow" "milk" "moofasa" "moose" "pony" "pony-smaller" "ren" "sheep" "skeleton" "snowman" "stegosaurus" "stimpy" "suse" "three-eyes" "turkey" "turtle" "tux" "unipony" "unipony-smaller" "vader" "vader-koala" "www")
-SRANDOM=$$$(date +%s)
 
 while (true); do
   random 3
   retval=$?
+  SRANDOM=$$$(date +%s)
   if [ "$retval" == 0 ]
     then
       cowsay Chew Chew Train COMING | lolcat
